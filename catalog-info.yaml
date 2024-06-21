@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: stribble-backstage
+  description: The group owning the DKS projects
+spec:
+  type: team
+  profile:
+    displayName: Stribble Backstage Team
+    email: team@example.com
+  members:
+    - user:sloanetribble
