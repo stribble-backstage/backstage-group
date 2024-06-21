@@ -1,12 +1,15 @@
 apiVersion: backstage.io/v1alpha1
-kind: Group
+kind: Component
 metadata:
-  name: stribble-backstage
-  description: The group owning the DKS projects
+  name: delete-me
+  description: Backend API for DKS
+  annotations:
+    backstage.io/techdocs-ref: dir:.
+    github.com/project-slug: liatrio/dks-api
+  tags:
+    - backend
+    - api
 spec:
-  type: team
-  profile:
-    displayName: Stribble Backstage Team
-    email: team@example.com
-  members:
-    - user:sloanetribble
+  type: service
+  owner: group:default/stribble-backstage
+  lifecycle: production
